@@ -1,0 +1,37 @@
+# Importing My list class
+>>> MyList = __import__('1-my_list').MyList
+
+# Testing MyList classs methods
+
+# success cases
+
+# Test case with positive integers
+>>> my_list = MyList()
+>>> my_list.append(2)
+>>> my_list.append(6)
+>>> my_list.append(4)
+>>> print(my_list)
+[2, 6, 4]
+>>> my_list.print_sorted()
+[2, 4, 6]
+>>> print(my_list)
+[2, 6, 4]
+
+# Test case with negative and positive integers
+>>> my_list = MyList()
+>>> my_list.append(-9)
+>>> my_list.append(2)
+>>> my_list.append(-5)
+>>> print(my_list)
+[-9, 2, -5]
+>>> my_list.print_sorted()
+[-9, -5, 2]
+>>> print(my_list)
+[-9, 2, -5]
+
+# Test case with an empty list
+>>> empty = MyList()
+>>> print(empty)
+[]
+>>> empty.print_sorted()
+[]
